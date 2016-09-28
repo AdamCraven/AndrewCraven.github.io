@@ -1,0 +1,26 @@
+{
+  "name": "andrewcraven",
+  "version": "1.0.0",
+  "description": "andrewcraven.co website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://AC02@github.com/Ac02/Ac02.github.io.git"
+  },
+  "author": "Andrew Craven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ac02/Ac02.github.io/issues"
+  },
+  "homepage": "https://github.com/Ac02/Ac02.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.3.2"
+  }
+}
