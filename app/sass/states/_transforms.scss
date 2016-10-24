@@ -1,0 +1,50 @@
+// ==========================================================================
+// Transfroms
+// ==========================================================================
+
+// Homepage image rotation
+
+.sub-header {
+	@include e(image) {
+		transition: .8s ease-out;
+		transform-style: preserve-3d;
+
+		&:hover {
+			transform: rotateY(180deg);
+		}
+		div {
+			position: absolute;
+			backface-visibility: hidden;
+		}
+		.side-a {
+			z-index: 2;
+		}
+		.side-b {
+			transform: rotateY(-180deg);
+		}
+	}
+}
+// ==========================================================================
+// Slide in
+// ==========================================================================
+
+.come-in {
+	transform: translateY(150px);
+	animation: come-in .8s ease forwards;
+
+	&:nth-child(2) {
+		animation-duration: 1.0s;
+	}
+	&:nth-child(3) {
+		animation-duration: 1.2s;
+	}
+}
+.already-visible {
+	transform: translateY(0);
+	animation: none;
+}
+@keyframes come-in {
+	to {
+		transform: translateY(-100px);
+	}
+}

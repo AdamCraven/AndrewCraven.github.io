@@ -1,0 +1,68 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+
+$font-url--google        : 'https://fonts.googleapis.com/css?family=Titillium+Web';
+$font-url--google1			 : 'https://fonts.googleapis.com/css?family=Lato';
+$font-family--primary    :  'Lato', 'Titillium Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weights
+
+$font-weight--thin		: 100;
+$font-weight--light		: 300;
+$font-weight--medium	: 400;
+$font-weight--bold		: 700;
+$font-weight--ultra-bold: 900;
+
+// Descriptive Base Colors
+
+$white		: #fff;
+$black		: #000;
+
+// Color Usage
+
+$color-primary			: $white;
+$color-secondary		: $black;
+
+// Color Palette Modifiers
+
+$color-palettes: (
+  white: (
+    dark     : darken($white, 8%),
+    x-dark   : darken($white, 16%),
+    xx-dark	 : darken($white, 45%),
+    base  	 : $white
+  )
+);
+
+// Border Radius
+
+$br--default    : .4em;
+$br--round      : 50%;
+
+// Text
+
+$base__font-size		: 16px;
+$base__line-height	: 1.5;
+$letter-space				: 2px;
+
+// Path to Assets
+
+$path--rel  				: "../../assets/";
+
+// Mobile Navigation
+
+$navigation-width					: 130px;
+$nav-menu-animation-time	: 0.3s;
+
+// Breakpoints
+
+$brkpoint--sm    : 1px;
+$brkpoint--md    : 768px;
+$brkpoint--lg    : 1100px;
+
+// Max-width Viewports
+
+$mwidth--lg			 : 1200px;

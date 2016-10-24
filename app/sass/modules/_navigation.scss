@@ -1,0 +1,107 @@
+nav {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+	padding: 30px 100px 0;
+	z-index: 2;
+
+	.main-nav {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+
+		@include e(item) {
+			margin: 0 25px;
+
+			.current {
+				color: $color-primary;
+				border-bottom: 1px solid $color-primary;
+
+				&:hover {
+					border-bottom-color: $color-primary;
+				}
+			}
+			a {
+				color: palette(white, x-dark);
+					transition: .2s ease-out;
+
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+	}
+	.mobile-nav-button {
+		position: absolute;
+		z-index: 101;
+		display: none;
+		padding: 0;
+		top: 28px;
+		left: -10px;
+
+		.mobile-nav-icon {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			margin: 0;
+			padding: 20px 30px;
+			width: 15px;
+			height: 15px;
+			font-size: 0;
+			cursor: pointer;
+			transition: background $nav-menu-animation-time/2;
+			float: left;
+
+			&.is-active {
+				span {
+					background: none;
+				}
+				span::before, span::after {
+					transition-delay: 0s, $nav-menu-animation-time/2;
+				}
+				span::before {
+					top: 0;
+					transform: rotate(45deg);
+				}
+				span::after {
+					bottom: 0;
+					transform: rotate(-45deg);
+				}
+			}
+			span {
+				display: block;
+				position: absolute;
+				top: 17px;
+				width: 15px;
+				height: 2px;
+				background-color: #000;
+				transition: background 0s, $nav-menu-animation-time/2;
+			}
+			span::before, span::after {
+				display: block;
+				position: absolute;
+				width: 15px;
+				height: 2px;
+				background-color: #000;
+				content: "";
+				transition-duration: $nav-menu-animation-time/2, $nav-menu-animation-time/2;
+				transition-delay: $nav-menu-animation-time/2, 0s;
+			}
+			span::before {
+				top: -4px;
+				transition-property: top, transform;
+				-webkit-transition-property: top, -webkit-transform;
+			}
+			span::after {
+				bottom: -4px;
+				transition-property: bottom, transform;
+				-webkit-transition-property: bottom, -webkit-transform;
+			}
+		}
+	}
+}

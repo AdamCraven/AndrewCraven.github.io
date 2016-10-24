@@ -1,0 +1,80 @@
+// ==========================================================================
+// Homepage 
+// ==========================================================================
+
+// Landing screen
+
+.sub-header {
+	@include e(image) {
+		position: relative;
+		margin-top: -70px;
+		width: 140px;
+		height: 140px;
+
+		div {
+			width: 100%;
+			height: 100%;
+			border: 3px solid $white;
+			border-radius: $br--round;
+			background-size: 100% 100%;
+		}
+		.side-a {
+			background-image: url('#{$path--rel}i_personal-photo.jpg');
+		}
+		.side-b {
+			background-image: url('#{$path--rel}i_personal-photo2.jpg');
+		}
+	}
+	p {
+		font-size: em(26px);
+		font-weight: $font-weight--ultra-bold;
+		margin: 0;
+	}
+	span {
+		font-size: 16px;
+		font-style: italic;
+		font-weight: $font-weight--thin;
+	}
+}
+// Content
+
+.homepage-content {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	padding: 200px 0 0;
+
+	& > div {
+		@extend %hpcontent;
+	}
+
+	@include e(portfolio) {
+		background-image: url('#{$path--rel}i_emma-pake.png');
+	}
+	@include e(about) {
+		background-image: url('#{$path--rel}i_nz.jpg');
+	}
+	@include e(contact) {
+		background-image: url('#{$path--rel}i_email.jpg')
+	}
+	.content-item {
+		flex-grow: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			a {
+				display: block;
+			}
+		}
+		a {
+			display: none;
+		}
+	}
+}

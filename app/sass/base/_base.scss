@@ -1,0 +1,80 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font-size: $base__font-size;
+	font-family: $font-family--primary;
+	line-height: $base__line-height;
+	letter-spacing: $letter-space;
+	margin: 0;
+	text-align: center;
+	perspective: 800px;
+}
+
+// Text
+
+h1 {
+	font-size: em(100px);
+	margin: 70px 0 0 0;
+	color: $color-primary;
+	text-shadow: -3px 4px 5px #000;
+}
+h2 {
+	font-size: em(22px);
+	color: $color-primary;
+	text-shadow: 3px 1px 1px #000;
+}
+a {
+	text-decoration: none;
+}
+h3 {
+	color: $color-primary;
+	padding: 10px 20px;
+	border: 2px solid $white;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		color: $color-secondary;
+		background-color: $white;
+	}
+}
+h4 {
+	font-size: em(28px);
+	margin: 0 auto 50px;
+	text-decoration: underline;
+}
+h5 {
+	color: $color-primary;
+	margin: 0 auto;
+	padding: 5px 10px;
+	border: 2px solid $white;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		color: $color-secondary;
+		background-color: $white;
+	}
+}
+p {
+	margin: 0;
+}
+span {
+	font-size: em(10px);
+}
+// Lists
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+// Images 
+
+img {
+	display: block;
+}

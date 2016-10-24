@@ -1,0 +1,21 @@
+// ==========================================================================
+// Footer
+// ==========================================================================
+
+footer {
+	display: flex;
+	align-items: center;
+	background-color: $black;
+	height: em(50px);
+
+	p {
+		margin: 0 auto;
+		letter-spacing: ($letter-space / 2);
+		color: palette(white, xx-dark);
+	}
+	a {
+	font-weight: $font-weight--thin;
+	font-style: italic;
+	color: palette(white, xx-dark);
+	}
+}

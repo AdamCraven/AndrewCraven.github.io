@@ -1,0 +1,47 @@
+// ==========================================================================
+// Header
+// ==========================================================================
+
+header {
+	position: relative;
+	width: 100%;
+	height: 80vh;
+	min-height: 300px;
+	margin: 0 auto;
+	background: $black;
+	text-align: center;
+
+	.inner-wrapper {
+		position: absolute;
+		top: 0;
+		display: table;
+		width: 100%;
+		height: 80vh;
+	}
+	.header-wrapper {
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+	}
+}
+.sub-header {
+	min-height: 20vh;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+// Homepage Header Background
+
+.homepage-header {
+	@extend %imgbackground;
+	background-image: url("#{$path--rel}i_homepage.jpeg");
+}
+
+// Portfolio Header Background
+
+.portfolio-header {
+	@extend %imgbackground;
+	background-image: url("#{$path--rel}i_portfolio.jpg");
+}

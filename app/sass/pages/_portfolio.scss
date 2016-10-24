@@ -1,0 +1,95 @@
+// ==========================================================================
+// Portfolio Page
+// ==========================================================================
+
+.sub-header {
+	.portfolio-thumbnail {
+		display: flex;
+
+		& > div {
+			@extend %thumb;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:hover {
+				a {
+					display: block;
+				}
+			}
+			a {
+				display: none;
+			}
+		}
+		@include e(1) {
+			background-image: url('#{$path--rel}i_emma-pake.png');
+		}
+		@include e(2) {
+			background-image: url('#{$path--rel}i_logic.png');
+		}
+		@include e(3) {
+			background-color: #999;
+		}
+	}
+}
+.portfolio-content {
+	display: flex;
+	flex-direction: column;
+
+	.portfolio-sites {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin: 0 auto;
+		padding: 200px 0 100px;
+	
+		.site-image {
+			@extend %hpcontent;
+			align-items: center;
+			border-radius: $br--default;
+			max-height: 571.5px;
+			margin-left: 5%;
+
+			&:hover {
+				a {
+					display: block;
+				}
+			}
+			a {
+				display: none;
+			}
+		}
+		.site-description {
+			margin-right: 5%;
+			flex: 2;
+
+			p {
+				text-align: left;
+				letter-spacing: $letter-space / 2;
+				margin: 0 20px;
+			}
+			a {
+				color: $color-secondary;
+				text-decoration: underline;
+			}
+		}
+	}
+	.page-navigation {
+		a {
+			color: $color-secondary;
+			text-decoration: underline;
+			padding: 10px;
+			margin: 0 15px;
+
+			&:hover {
+				color: palette(white, xx-dark);
+			}
+		}
+	}
+}
+.ep-site {
+	background-image: url('#{$path--rel}i_emma-pake.png');
+}
+.logic-site {
+	background-image: url('#{$path--rel}i_logic.png');
+}
