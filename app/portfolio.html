@@ -9,84 +9,91 @@
   <title>Portfolio - Andrew Craven</title>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script type="text/javascript" src="./js/index.js"></script>
+  <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <header class="portfolio-header" id="top">
-    <nav>
-      <a href="#" class="mobile-nav-button">
-        <span class="mobile-nav-icon">
-          <span></span>
-        </span>
-      </a>
-      <a href="./index.html"><img class="logo" src="./assets/i_ac-logo-white-temp.png" alt="White Andrew Craven Logo"></a>
-      <ul class="main-nav">
-        <li class="main-nav__item"><a href="index.html">HOME</a></li>
-        <li class="main-nav__item"><a href="portfolio.html" class="current">PORTFOLIO</a></li>
-        <li class="main-nav__item"><a href="#">ABOUT</a></li>
-        <li class="main-nav__item"><a href="mailto:hello@andrewcraven.co">CONTACT</a></li>
-      </ul>
-    </nav>
-    <div class="inner-wrapper">
-      <div class="header-wrapper">
-        <h1>PORTFOLIO</h1>
-        <h2>Check out some of my latest projects</h2>
+  <div class="page-wrapper">
+    <header class="portfolio-header" id="top">
+      <nav>
+        <a href="#" class="mobile-nav-button">
+          <span class="mobile-nav-icon">
+            <span></span>
+          </span>
+        </a>
+        <a href="./index.html" class="logo"><img class="logo__img" src="./assets/i_ac-logo-white-temp.png" alt="White Andrew Craven Logo"></a>
+        <ul class="main-nav">
+          <li class="main-nav__item"><a href="index.html">HOME</a></li>
+          <li class="main-nav__item"><a href="portfolio.html" class="current">PORTFOLIO</a></li>
+          <li class="main-nav__item"><a href="about.html">ABOUT</a></li>
+          <li class="main-nav__item"><a href="mailto:hello@andrewcraven.co">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="inner-wrapper">
+        <div class="header-wrapper">
+          <h1>PORTFOLIO</h1>
+          <h2>Check out some of my latest projects</h2>
+        </div>
+      </div>
+    </header>
+
+    <div class="sub-header">
+      <div class="portfolio-thumbnail row">
+        <div class="portfolio-thumbnail__1"><a href="#port-1"><h5>VIEW</h5></a></div>
+        <div class="portfolio-thumbnail__2"><a href="#port-2"><h5>VIEW</h5></a></div>
+        <div class="portfolio-thumbnail__3"><a href="#port-3"><h5>VIEW</h5></a></div>
       </div>
     </div>
-  </header>
 
-  <div class="sub-header">
-    <div class="portfolio-thumbnail row">
-      <div class="portfolio-thumbnail__1"><a href="#port-1"><h5>VIEW</h5></a></div>
-      <div class="portfolio-thumbnail__2"><a href="#port-2"><h5>VIEW</h5></a></div>
-      <div class="portfolio-thumbnail__3"><a href="#port-3"><h5>VIEW</h5></a></div>
-    </div>
+    <main>
+      <div class="portfolio-content">
+        <div class="full-vh-background">
+          <div class="portfolio-sites" id="port-1">
+            <div class="site-image ep-site">
+              <a href="https://www.emmapake.com" target="_blank"><h3>VISIT SITE</h3></a>
+            </div>
+            <div class="site-description">
+              <h4>EMMA PAKE</h4>
+              <p>Emma Pake is a new high-end luxury women’s beachwear brand. The brand is already an international success with collections stocked in Selfridges and Net-a-Porter.</p>
+              <br>
+              <p>I started this project by creating a static website. I built a pixel perfect homepage (following the design) and developed the rest of the sites user interface (UI) to the clients specfications, mainting a consistent style across the whole website. I then proceeded to integrate the static site with Shopify to create an e-commerce website. The site was built using HTML, CSS(Sass), JavaScript and was integrated using Liquid.</p>
+              <br>
+              <p><a href="https://www.emmapake.com" target="_blank">EmmaPake.com</a> has full cross browser support and is a responsive website,  so it looks great on desktop, mobile and tablet.</p>
+            </div>
+          </div>
+          <div class="page-navigation">
+            <a href="#top">Back to the top</a>
+            <a href="#port-2">Next project</a>
+          </div>
+        </div>
+        <div class="full-vh">
+          <div class="portfolio-sites" id="port-2">
+            <div class="site-image logic-site">
+              <a href="#" target="_blank"><h3>VISIT SITE</h3></a>
+            </div>
+            <div class="site-description">
+              <h4>Logic Mechanical Services</h4>
+                <p>This website was built for a new mechanical services company, unfortunatley the business never got off the ground.</p>
+                <br>
+                <p>The website was very close to being production ready when I was informed about the business closing. I decided to host the website so that that it can viewed as an example site.</p>
+                <br>
+                <p>I worked closely with the director of the company as we developed the designs for site. The site was created using HTML, CSS(Sass) and JavaScript. Once again this site is responsive so the user interface (UI) is great on all devices.</p>
+            </div>
+          </div>
+          <div class="page-navigation">
+            <a href="#top">Back to the top</a>
+            <a href="#">Next project</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Designed &amp; created by Andrew Craven<span> &copy; 2016</span></p>
+    </footer>
   </div>
-
-  <main>
-    <div class="portfolio-content">
-      <div class="full-vh">
-        <div class="portfolio-sites" id="port-1">
-          <div class="site-image ep-site module">
-            <a href="https://www.emmapake.com" target="_blank"><h3>VISIT SITE</h3></a>
-          </div>
-          <div class="site-description module">
-            <h4>EMMA PAKE</h4>
-            <p>Emma Pake is a new high-end luxury women’s beachwear brand. The brand is already an international success with collections stocked in Selfridges and Net-a-Porter.</p>
-            <br>
-            <p>I started this project by creating a static website. I built a pixel perfect homepage (following the design) and developed the rest of the sites user interface (UI) to the clients specfications, mainting a consistent style across the whole website. I then proceeded to integrate the static site with Shopify to create an e-commerce website. The site was build using HTML, Sass(CSS), JavaScript and was integrated using Liquid.</p>
-            <br>
-            <p><a href="https://www.emmapake.com" target="_blank">EmmaPake.com</a> has full cross browser support and is a responsive website,  so it looks great on desktop, mobile and tablet.</p>
-          </div>
-        </div>
-        <div class="page-navigation module">
-          <a href="#top">Back to the top</a>
-          <a href="#port-2">Next project</a>
-        </div>
-      </div>
-      <div class="full-vh">
-        <div class="portfolio-sites" id="port-2">
-          <div class="site-image logic-site module">
-            <a href="#" target="_blank"><h3>VISIT SITE</h3></a>
-          </div>
-          <div class="site-description module">
-            <h4>Logic Mechanical Services</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-        </div>
-        <div class="page-navigation module">
-          <a href="#port-1">Previous project</a>
-          <a href="#">Next project</a>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <p>Designed &amp; created by <a href="#">Andrew Craven</a><span> &copy; 2016</span></p>
-  </footer>
-  </body>
+</body>
 </html>

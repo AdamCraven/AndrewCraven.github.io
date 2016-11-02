@@ -14,10 +14,34 @@ nav {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
+		padding: 0;
+		list-style-type: none;
 
+		@media (max-width:$brkpoint--lg) {
+			text-align: left;
+			margin-right: 0;
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			right: -$navigation-width;
+			padding: 100px 0 0 10px;
+			background-color: rgba(0, 0, 0, 1);
+			width: $navigation-width;
+			transition: right $nav-menu-animation-time cubic-bezier(0.46, 0.01, 0.32, 1);
+			height: 100vh;
+			z-index: 102;
+
+			&.selected {
+				right: 0;
+			}
+		}
 		@include e(item) {
 			margin: 0 25px;
 
+			@media (max-width:$brkpoint--lg) {
+				padding-top: 5px;
+				margin: 0;
+			}
 			.current {
 				color: $color-primary;
 				border-bottom: 1px solid $color-primary;
@@ -28,7 +52,7 @@ nav {
 			}
 			a {
 				color: palette(white, x-dark);
-					transition: .2s ease-out;
+				transition: .2s ease-out;
 
 				&:hover {
 					color: $color-primary;
@@ -38,12 +62,19 @@ nav {
 	}
 	.mobile-nav-button {
 		position: absolute;
-		z-index: 101;
+		z-index: 103;
 		display: none;
 		padding: 0;
-		top: 28px;
-		left: -10px;
+		top: 66px;
+		right: 90px;
 
+		@media (max-width:$brkpoint--lg) {
+			display: block;
+		}
+		@media (max-width:$brkpoint--md) {
+			top: 55px;
+			right: 20px;
+		}
 		.mobile-nav-icon {
 			display: block;
 			position: relative;
@@ -79,7 +110,7 @@ nav {
 				top: 17px;
 				width: 15px;
 				height: 2px;
-				background-color: #000;
+				background-color: $white;
 				transition: background 0s, $nav-menu-animation-time/2;
 			}
 			span::before, span::after {
@@ -87,7 +118,7 @@ nav {
 				position: absolute;
 				width: 15px;
 				height: 2px;
-				background-color: #000;
+				background-color: $white;
 				content: "";
 				transition-duration: $nav-menu-animation-time/2, $nav-menu-animation-time/2;
 				transition-delay: $nav-menu-animation-time/2, 0s;
@@ -102,6 +133,22 @@ nav {
 				transition-property: bottom, transform;
 				-webkit-transition-property: bottom, -webkit-transform;
 			}
+		}
+	}
+}
+// ==========================================================================
+// Logo Styles
+// ==========================================================================
+
+.logo {
+	@media (max-width:$brkpoint--md) {
+		margin: 0 auto;
+	}
+	@include e(img) {
+		width: 150px;
+
+		@media (max-width:$brkpoint--md) {
+			width: 120px;
 		}
 	}
 }

@@ -1,0 +1,55 @@
+// ==========================================================================
+// About
+// ==========================================================================
+
+.about-content {
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	margin: 0 auto;
+
+	@media (max-width:$brkpoint--sm) {
+		flex-direction: column;
+	}
+
+	& > div {
+		text-align: left;
+		letter-spacing: $letter-space / 4;
+	}
+	@include e(my-work) {
+		flex: 2;
+		order: 1;
+
+		@media (max-width:$brkpoint--sm) {
+			order: 0;
+		}
+	}
+	@include e(about-image) {
+		flex: 1;
+
+		img {
+			width: 50%;
+			border-radius: $br--round;
+			margin-top: 10px;
+
+			@media (max-width:$brkpoint--md) {
+				margin: 0 auto;
+			}
+		}
+		p {
+			margin-top: 10px;
+
+			@media (max-width:$brkpoint--md) {
+				font-size: 14px;
+			}
+			@media (max-width:$brkpoint--sm) {
+				text-align: center;
+			}
+		}
+		a {
+			color: $color-secondary;
+			text-decoration: underline;
+			padding-left: 5px;
+		}
+	}
+}

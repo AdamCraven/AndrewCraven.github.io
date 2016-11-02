@@ -9,66 +9,69 @@
   <title>Andrew Craven</title>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script type="text/javascript" src="./js/index.js"></script>
+  <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <header class="homepage-header">
-    <nav>
-      <a href="#" class="mobile-nav-button">
-        <span class="mobile-nav-icon">
-          <span></span>
-        </span>
-      </a>
-      <a href="./index.html"><img class="logo" src="./assets/i_ac-logo-white-temp.png" alt="White Andrew Craven Logo"></a>
-      <ul class="main-nav">
-        <li class="main-nav__item"><a href="#" class="current">HOME</a></li>
-        <li class="main-nav__item"><a href="portfolio.html">PORTFOLIO</a></li>
-        <li class="main-nav__item"><a href="#">ABOUT</a></li>
-        <li class="main-nav__item"><a href="mailto:hello@andrewcraven.co">CONTACT</a></li>
-      </ul>
-    </nav>
-    <div class="inner-wrapper">
-      <div class="header-wrapper">
-        <h1>FRONT END DEVELOPER</h1>
-        <h2>Following my passion by creating beautiful responsive websites</h2>
+  <div class="page-wrapper">
+    <header class="homepage-header">
+      <nav>
+        <a href="#" class="mobile-nav-button">
+          <span class="mobile-nav-icon">
+            <span></span>
+          </span>
+        </a>
+        <a href="./index.html" class="logo"><img class="logo__img" src="./assets/i_ac-logo-white-temp.png" alt="White Andrew Craven Logo"></a>
+        <ul class="main-nav">
+          <li class="main-nav__item"><a href="index.html" class="current">HOME</a></li>
+          <li class="main-nav__item"><a href="portfolio.html">PORTFOLIO</a></li>
+          <li class="main-nav__item"><a href="about.html">ABOUT</a></li>
+          <li class="main-nav__item"><a href="mailto:hello@andrewcraven.co">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="inner-wrapper">
+        <div class="header-wrapper">
+          <h1>FRONT END DEVELOPER</h1>
+          <h2>HTML &#9671; CSS &#9671; JavaScript</h2>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <div class="sub-header column">
-    <div class="sub-header__image"> 
-      <div class="side-a"></div>
-      <div class="side-b"></div>
+    <div class="sub-header column">
+      <div class="sub-header__image"> 
+        <div class="side-a"></div>
+        <div class="side-b"></div>
+      </div>
+      <p>Andrew Craven</p>
+      <span>Following my passion by creating beautiful responsive websites</span>
     </div>
-    <p>Andrew Craven</p>
-    <span>"Some text that says something about me"</span>
+
+    <main>
+      <div class="homepage-content">
+        <div class="homepage-content__portfolio module">
+          <div class="content-item">
+            <a href="portfolio.html"><h3>PORTFOLIO</h3></a>
+          </div>
+        </div>
+        <div class="homepage-content__about module">
+          <div class="content-item"> 
+            <a href="about.html"><h3>ABOUT ME</h3></a>
+          </div>
+        </div>
+        <div class="homepage-content__contact module">
+          <div class="content-item">
+            <a href="mailto:hello@andrewcraven.co"><h3>CLICK HERE</h3></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Designed &amp; created by Andrew Craven<span> &copy; 2016</span></p>
+    </footer>
   </div>
-
-  <main>
-    <div class="homepage-content">
-      <div class="homepage-content__portfolio module">
-        <div class="content-item">
-          <a href="portfolio.html"><h3>PORTFOLIO</h3></a>
-        </div>
-      </div>
-      <div class="homepage-content__about module">
-        <div class="content-item"> 
-          <a href="#"><h3>ABOUT ME</h3></a>
-        </div>
-      </div>
-      <div class="homepage-content__contact module">
-        <div class="content-item">
-          <a href="mailto:hello@andrewcraven.co"><h3>CLICK HERE</h3></a>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <p>Designed &amp; created by <a href="#">Andrew Craven</a><span> &copy; 2016</span></p>
-  </footer>
 </body>
 </html>

@@ -2,10 +2,16 @@
 // Page
 // ==========================================================================
 
+.page-wrapper {
+	overflow: hidden;
+}
 .full-vh {
 	min-height: 100vh;
+	margin: 0;
+}
+.full-vh-background {
+	@extend .full-vh;
 	background-color: #d7dde9;
-	margin: 100px 0;
 }
 .column {
 	flex-direction: column;
