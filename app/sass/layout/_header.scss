@@ -37,21 +37,21 @@ header {
 
 .homepage-header {
 	@extend %imgbackground;
-	background-image: url("#{$path--rel}i_homepage2.jpg");
+	background-image: url("i_homepage2.jpg");
 }
 
 // Portfolio Header Background
 
 .portfolio-header {
 	@extend %imgbackground;
-	background-image: url("#{$path--rel}i_portfolio.jpeg");
+	background-image: url("i_portfolio.jpeg");
 }
 
 // About Header Background
 
 .about-header {
 	@extend %imgbackground;
-	background-image: url("#{$path--rel}i_about2.jpeg");
+	background-image: url("i_about2.jpeg");
 }
 
 // ==========================================================================
@@ -98,10 +98,10 @@ header {
 			background-size: 100% 100%;
 		}
 		.side-a {
-			background-image: url('#{$path--rel}i_personal-photo.jpg');
+			background-image: url('i_personal-photo.jpg');
 		}
 		.side-b {
-			background-image: url('#{$path--rel}i_personal-photo2.jpg');
+			background-image: url('i_personal-photo2.jpg');
 		}
 	}
 	p {
@@ -146,11 +146,11 @@ header {
 		}
 		@include e(1) {
 			@extend %thumb;
-			background-image: url('#{$path--rel}i_emma-pake--thumbnail.png');
+			background-image: url('i_emma-pake--thumbnail.png');
 		}
 		@include e(2) {
 			@extend %thumb;
-			background-image: url('#{$path--rel}i_logic--thumbnail.png');
+			background-image: url('i_logic--thumbnail.png');
 		}
 		@include e(3) {
 			@extend %thumb;

@@ -42,12 +42,12 @@
 			.ep-site {
 				@extend %content-item-image;
 				
-				background-image: url('#{$path--rel}i_emma-pake.png');
+				background-image: url('i_emma-pake.png');
 			}
 			.logic-site {
 				@extend %content-item-image;
 				border-radius: $br--default;
-				background-image: url('#{$path--rel}i_logic.png');
+				background-image: url('i_logic.png');
 			}
 		}
 		.site-description {

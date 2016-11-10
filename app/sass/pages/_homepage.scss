@@ -48,15 +48,15 @@
 	.content-item {
 		@include e(portfolio) {
 			@extend %content-item-image;
-			background-image: url('#{$path--rel}i_emma-pake.png');
+			background-image: url('i_emma-pake.png');
 		}
 		@include e(about) {
 			@extend %content-item-image;
-			background-image: url('#{$path--rel}i_nz.jpg');
+			background-image: url('i_nz.jpg');
 		}
 		@include e(contact) {
 			@extend %content-item-image;
-			background-image: url('#{$path--rel}i_email.jpg');
+			background-image: url('i_email.jpg');
 		}
 	}
 }

@@ -177,11 +177,11 @@ header .inner-wrapper { position: absolute; top: 0; display: table; width: 100%;
 
 header .header-wrapper { display: table-cell; text-align: center; vertical-align: middle; }
 
-.homepage-header { background-image: url("../../assets/i_homepage2.jpg"); }
+.homepage-header { background-image: url("i_homepage2.jpg"); }
 
-.portfolio-header { background-image: url("../../assets/i_portfolio.jpeg"); }
+.portfolio-header { background-image: url("i_portfolio.jpeg"); }
 
-.about-header { background-image: url("../../assets/i_about2.jpeg"); }
+.about-header { background-image: url("i_about2.jpeg"); }
 
 .sub-header { height: 20vh; display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-align: center; -webkit-align-items: center; -moz-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -moz-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 50px; }
 
@@ -195,9 +195,9 @@ header .header-wrapper { display: table-cell; text-align: center; vertical-align
 
 .sub-header__image div { width: 100%; height: 100%; border: 3px solid #fff; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; background-size: 100% 100%; }
 
-.sub-header__image .side-a { background-image: url("../../assets/i_personal-photo.jpg"); }
+.sub-header__image .side-a { background-image: url("i_personal-photo.jpg"); }
 
-.sub-header__image .side-b { background-image: url("../../assets/i_personal-photo2.jpg"); }
+.sub-header__image .side-b { background-image: url("i_personal-photo2.jpg"); }
 
 .sub-header p { font-size: 1.625em; font-weight: 900; margin: 0; }
 
@@ -213,9 +213,9 @@ header .header-wrapper { display: table-cell; text-align: center; vertical-align
 
 @media (max-width: 680px) { .sub-header .portfolio-thumbnail > div { margin: 0 5px; } }
 
-.sub-header .portfolio-thumbnail__1 { background-image: url("../../assets/i_emma-pake--thumbnail.png"); }
+.sub-header .portfolio-thumbnail__1 { background-image: url("i_emma-pake--thumbnail.png"); }
 
-.sub-header .portfolio-thumbnail__2 { background-image: url("../../assets/i_logic--thumbnail.png"); }
+.sub-header .portfolio-thumbnail__2 { background-image: url("i_logic--thumbnail.png"); }
 
 .sub-header .portfolio-thumbnail__3 { background-color: #999; }
 
@@ -324,11 +324,11 @@ nav .mobile-nav-button .mobile-nav-icon span::after { bottom: -4px; transition-p
 
 @media (max-width: 768px) { .homepage-content { width: 100%; -webkit-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; } }
 
-.homepage-content .content-item__portfolio { background-image: url("../../assets/i_emma-pake.png"); }
+.homepage-content .content-item__portfolio { background-image: url("i_emma-pake.png"); }
 
-.homepage-content .content-item__about { background-image: url("../../assets/i_nz.jpg"); }
+.homepage-content .content-item__about { background-image: url("i_nz.jpg"); }
 
-.homepage-content .content-item__contact { background-image: url("../../assets/i_email.jpg"); }
+.homepage-content .content-item__contact { background-image: url("i_email.jpg"); }
 
 .portfolio-content { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -moz-box-orient: vertical; -moz-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
@@ -344,9 +344,9 @@ nav .mobile-nav-button .mobile-nav-icon span::after { bottom: -4px; transition-p
 
 .portfolio-content .portfolio-sites .site-image:before { content: ''; display: table; padding-top: 100%; }
 
-.portfolio-content .portfolio-sites .site-image .ep-site { background-image: url("../../assets/i_emma-pake.png"); }
+.portfolio-content .portfolio-sites .site-image .ep-site { background-image: url("i_emma-pake.png"); }
 
-.portfolio-content .portfolio-sites .site-image .logic-site { -webkit-border-radius: 0.4em; -moz-border-radius: 0.4em; border-radius: 0.4em; background-image: url("../../assets/i_logic.png"); }
+.portfolio-content .portfolio-sites .site-image .logic-site { -webkit-border-radius: 0.4em; -moz-border-radius: 0.4em; border-radius: 0.4em; background-image: url("i_logic.png"); }
 
 .portfolio-content .portfolio-sites .site-description { margin-right: 5%; -webkit-box-flex: 2; -webkit-flex: 2; -moz-box-flex: 2; -ms-flex: 2; flex: 2; }
 
