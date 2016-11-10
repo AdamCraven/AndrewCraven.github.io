@@ -143,12 +143,15 @@ nav {
 .logo {
 	@media (max-width:$brkpoint--md) {
 		margin: 0 auto;
+		display: flex;
 	}
 	@include e(img) {
 		width: 150px;
 
 		@media (max-width:$brkpoint--md) {
 			width: 120px;
+			height: 86px;
+			margin: 0 auto;
 		}
 	}
 }

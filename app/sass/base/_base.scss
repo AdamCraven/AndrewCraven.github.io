@@ -26,7 +26,7 @@ h1 {
 	@media (max-width:$brkpoint--lg) {
 		font-size: em(60px);
 	}
-	@media (max-width:$brkpoint--sm) {
+	@media (max-width:$brkpoint--md) {
 		font-size: em(40px);
 	}
 }
@@ -35,7 +35,7 @@ h2 {
 	color: $color-primary;
 	text-shadow: 3px 1px 1px #000;
 
-	@media (max-width:$brkpoint--sm) {
+	@media (max-width:$brkpoint--md) {
 		font-size: em(18px);
 	}
 }
@@ -43,8 +43,9 @@ a {
 	text-decoration: none;
 }
 h3 {
+	font-size: em(16px);
 	color: $color-primary;
-	padding: 10px 20px;
+	padding: 8px 16px;
 	border: 2px solid $white;
 	transition: .3s ease-in-out;
 

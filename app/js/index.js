@@ -46,6 +46,7 @@ $(document).ready(function() {
 
 	var firstReveal = {
 		duration: 1000,
+		
 		distance: '100px',
 		scale: 1,
 		easing: 'ease',

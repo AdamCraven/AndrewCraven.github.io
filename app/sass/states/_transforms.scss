@@ -6,18 +6,24 @@
 
 .sub-header {
 	@include e(image) {
-		transition: .8s ease-out;
 		transform-style: preserve-3d;
+		perspective: 800;
 
-		&:hover {
+		&:hover .side-a {
 			transform: rotateY(180deg);
+		}
+		&:hover .side-b {
+			transform: rotateY(0deg);
 		}
 		div {
 			position: absolute;
 			backface-visibility: hidden;
+			transform-style: preserve-3d;
+			transition: .8s ease-out;
 		}
 		.side-a {
 			z-index: 2;
+			transform: rotateY(0deg);
 		}
 		.side-b {
 			transform: rotateY(-180deg);
@@ -26,7 +32,7 @@
 }
 
 // ==========================================================================
-// Rotation for arrow
+// Rotation arrow About page
 // ==========================================================================
 
 .active {

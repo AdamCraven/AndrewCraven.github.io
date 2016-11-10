@@ -9,45 +9,64 @@
 	background-position: center bottom;
 	background-size: 100% 100%;
 }
+
 // Homepage Content Elements
 
-%hpcontent {
+%hpcontent-i-parent {
+	display: flex;
+	flex-grow: 1;
+	width: 100%;
+	overflow: hidden;
+	flex-basis: auto;
+}
+%content-item-image {
 	@extend %imgbackground;
 	display: flex;
+	flex-grow: 1;
 	justify-content: center;
-	flex: 1;
-	transition: .5s ease;
+	align-items: center;
+	transition: all .5s ease;
 
 	&:hover {
 		box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .6);
-		background-size: 105% 105%;
+		transform: scale(1.08);
+
+		a {
+			display: block;
+		}
 	}
-	&:before {
-		content: '';
-		display: table;
-		padding-top: 100%;
+	a {
+		display: none;
 	}
 }
+
 // Sub Header Portfolio Page 
 
 %thumb {
 	@extend %imgbackground;
-	min-width: 180px;
-	margin: 0 20px;
-	border: 1px solid rgba(1, 1, 1, 0.2);
-	border-radius: $br--default;
-	transition: .5s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 175px;
+	min-height: 175px;
+	transition: all .5s ease;
+	z-index: 0;
 
 	@media (max-width:$brkpoint--sm) {
 		min-width: 90px;
-		margin: 0 5px;
+		min-height: 90px;
 	}
-
+	a {
+		display: none;
+	}
 	&:hover {
 		box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .6);
-		background-size: 105% 105%;
-	}
+		transform: scale(1.08);
 
+		a {
+			display: block;
+		}
+	}
 	&:before {
 		content: '';
 		float: left;

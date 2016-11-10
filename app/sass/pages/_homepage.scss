@@ -7,6 +7,7 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	flex-basis: auto;
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
@@ -15,37 +16,47 @@
 	@media (max-width:$brkpoint--md) {
 		flex-direction: column;
 	}
-
 	& > div {
-		@extend %hpcontent;
+		@extend %imgbackground;
+		display: flex;
+		justify-content: center;
+		flex: 1;
+		flex-basis: auto;
+		margin: -1px; // to remove white space on Safari
 
-		@media (max-width:$brkpoint--md) {
-			width: 100%;
-		}		
+		&:before {
+			content: '';
+			display: table;
+			padding-top: 100%;
+		}
 	}
-
+	
+	@media (max-width:$brkpoint--md) {
+		width: 100%;
+		flex-basis: auto;	// prevent collapse in IE when vertical
+	}
+	
 	@include e(portfolio) {
-		background-image: url('#{$path--rel}i_emma-pake.png');
+		@extend %hpcontent-i-parent;
 	}
 	@include e(about) {
-		background-image: url('#{$path--rel}i_nz.jpg');
+		@extend %hpcontent-i-parent;
 	}
 	@include e(contact) {
-		background-image: url('#{$path--rel}i_email.jpg')
+		@extend %hpcontent-i-parent;
 	}
 	.content-item {
-		display: flex;
-		flex-grow: 1;
-		justify-content: center;
-		align-items: center;
-
-		&:hover {
-			a {
-				display: block;
-			}
+		@include e(portfolio) {
+			@extend %content-item-image;
+			background-image: url('#{$path--rel}i_emma-pake.png');
 		}
-		a {
-			display: none;
+		@include e(about) {
+			@extend %content-item-image;
+			background-image: url('#{$path--rel}i_nz.jpg');
+		}
+		@include e(contact) {
+			@extend %content-item-image;
+			background-image: url('#{$path--rel}i_email.jpg');
 		}
 	}
 }
