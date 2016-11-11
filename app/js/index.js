@@ -23,7 +23,6 @@ $(function() {
 
 $(document).ready(function() {
 	$('.mobile-nav-button').click(function() {
-	  console.log('click');
 		$('.main-nav').toggleClass('selected');
 	});
 
@@ -46,7 +45,6 @@ $(document).ready(function() {
 
 	var firstReveal = {
 		duration: 1000,
-		
 		distance: '100px',
 		scale: 1,
 		easing: 'ease',
@@ -69,7 +67,7 @@ $(document).ready(function() {
 		reset: false
 	};
 
-	window.sr = ScrollReveal();
+	var sr = ScrollReveal();
 	sr.reveal('.homepage-content__portfolio, .site-image, .about-content__about-image', firstReveal);
 	sr.reveal('.homepage-content__about, .site-description, .about-content__my-work', secondReveal);
 	sr.reveal('.homepage-content__contact, .page-navigation', thirdReveal);

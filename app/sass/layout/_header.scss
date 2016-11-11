@@ -6,12 +6,13 @@ header {
 	position: relative;
 	width: 100%;
 	height: 75vh;
-	min-height: 300px;
+	min-height: 500px;
 	margin: 0 auto;
 	background: $black;
 	text-align: center;
 
 	@media (max-width:$brkpoint--sm) {
+		min-height: 300px;
 		transition: height 999999s ease;
 	}
 
@@ -27,9 +28,16 @@ header {
 		}
 	}
 	.header-wrapper {
-		display: table-cell;
+		display: flex;
 		text-align: center;
-		vertical-align: middle;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		min-height: 500px;
+
+		@media (max-width:$brkpoint--sm) {
+			min-height: 300px;
+		}
 	}
 }
 
@@ -59,13 +67,12 @@ header {
 // ==========================================================================
 
 .sub-header {
-	height: 20vh;
-	min-height: 200px;
+	height: 25vh;
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 50px;
+
 
 	@media (max-width:$brkpoint--sm) {
 		transition: height 999999s ease;
@@ -77,17 +84,16 @@ header {
 .sub-header {
 	@include e(image) {
 		position: relative;
-		margin-top: -70px;
+		margin-top: -140px;
 		width: 140px;
 		height: 140px;
 
 		@media (max-width:$brkpoint--md) {
-			margin-top: -140px;
-		}
-
-		@media (max-width:$brkpoint--md) {
 			width: 100px;
 			height: 100px;
+			margin-top: -110px;
+		}
+		@media (max-width:$brkpoint--xs) {
 			margin-top: -50px;
 		}
 

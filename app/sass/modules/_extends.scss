@@ -12,13 +12,6 @@
 
 // Homepage Content Elements
 
-%hpcontent-i-parent {
-	display: flex;
-	flex-grow: 1;
-	width: 100%;
-	overflow: hidden;
-	flex-basis: auto;
-}
 %content-item-image {
 	@extend %imgbackground;
 	display: flex;

@@ -16,12 +16,17 @@
 	@media (max-width:$brkpoint--md) {
 		flex-direction: column;
 	}
+	@media (max-width:$brkpoint--sm) {
+		margin-top: 30px;
+	}
 	& > div {
 		@extend %imgbackground;
 		display: flex;
 		justify-content: center;
 		flex: 1;
 		flex-basis: auto;
+		width: 100%;
+		overflow: hidden;
 		margin: -1px; // to remove white space on Safari
 
 		&:before {
@@ -35,16 +40,7 @@
 		width: 100%;
 		flex-basis: auto;	// prevent collapse in IE when vertical
 	}
-	
-	@include e(portfolio) {
-		@extend %hpcontent-i-parent;
-	}
-	@include e(about) {
-		@extend %hpcontent-i-parent;
-	}
-	@include e(contact) {
-		@extend %hpcontent-i-parent;
-	}
+
 	.content-item {
 		@include e(portfolio) {
 			@extend %content-item-image;

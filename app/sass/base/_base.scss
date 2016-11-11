@@ -15,11 +15,12 @@ body {
 	text-align: center;
 	perspective: 800px;
 }
+
 // Text
 
 h1 {
 	font-size: em(80px);
-	margin: 70px 0 0 0;
+	margin: 200px 0 0 0;
 	color: $color-primary;
 	text-shadow: -3px 4px 5px #000;
 
@@ -27,13 +28,17 @@ h1 {
 		font-size: em(60px);
 	}
 	@media (max-width:$brkpoint--md) {
-		font-size: em(40px);
+		font-size: em(30px);
+		margin: 180px auto 0;
+	}
+	@media (max-width:$brkpoint--sm) {
+		margin-top: 160px;
 	}
 }
 h2 {
 	font-size: em(22px);
 	color: $color-primary;
-	text-shadow: 3px 1px 1px #000;
+	text-shadow: -3px 4px 5px #000;
 
 	@media (max-width:$brkpoint--md) {
 		font-size: em(18px);
