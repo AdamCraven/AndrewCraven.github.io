@@ -65,8 +65,8 @@ h3 {
 }
 h4 {
 	font-size: em(28px);
+	font-weight: $font-weight--medium;
 	margin: 0 auto 50px;
-	text-decoration: underline;
 
 	@media (max-width:$brkpoint--md) {
 		margin: 20px auto;

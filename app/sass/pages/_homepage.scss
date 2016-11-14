@@ -11,7 +11,7 @@
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
-	margin: 0 auto;
+	margin: 1px auto 0;
 
 	@media (max-width:$brkpoint--md) {
 		flex-direction: column;

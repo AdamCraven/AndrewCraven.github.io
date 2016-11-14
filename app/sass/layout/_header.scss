@@ -135,6 +135,13 @@ header {
 
 // Portfolio Sub-header
 
+.portfolio-sub-header {
+	min-height: 200px;
+
+	@media (max-width:$brkpoint--md) {
+		min-height: auto;
+	}
+}
 .sub-header {
 	.portfolio-thumbnail {
 		display: flex;

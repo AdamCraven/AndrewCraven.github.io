@@ -62,9 +62,15 @@
 			}
 			p {
 				text-align: left;
+				font-weight: $font-weight--light;
 				letter-spacing: $letter-space / 4;
-				margin: 0 20px;
-			}
+				margin: 0 55px 20px;
+				color: #444;
+
+				@media (max-width:$brkpoint--sm) {
+					margin: 0 30px 20px;
+				}
+ 			}
 			a {
 				color: $color-secondary;
 				text-decoration: underline;
@@ -76,12 +82,13 @@
 
 		a {
 			color: $color-secondary;
-			text-decoration: underline;
 			padding: 10px;
 			margin: 0 15px;
+			transition: color .3s ease;
 
 			&:hover {
 				color: palette(white, xx-dark);
+				text-decoration: underline;
 			}
 		}
 		@media (max-width:$brkpoint--sm) {
